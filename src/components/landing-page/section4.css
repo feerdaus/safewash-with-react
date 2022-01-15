@@ -1,0 +1,56 @@
+.heading {
+  font-size: 48px;
+  color: #21a4c4;
+  line-height: 77px;
+  font-weight: 700;
+}
+
+.paragraph {
+  max-width: 816px;
+  font-size: 16px;
+}
+
+.s4-p {
+  max-width: 816px;
+}
+
+.s4-names {
+  color: #6eb245;
+}
+
+.distributor {
+  max-width: 293px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 31px #f4f4f9;
+}
+
+.distributor-ellipse {
+  left: 13.5%;
+}
+
+.contact-button {
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 7px 26px;
+  background-color: #21a4c4;
+}
+
+.distributor-btn {
+  border-radius: 13px 13px 13px 0px;
+  padding: 16px 21px;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Gilroy;
+}
+
+@media (max-width: 760px) {
+  .heading {
+    font-size: 26px;
+  }
+  .paragraph {
+    max-width: 339px;
+    font-size: 14px;
+  }
+}

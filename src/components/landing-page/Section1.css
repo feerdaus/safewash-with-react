@@ -1,0 +1,62 @@
+.section1 {
+  height: 100vh;
+  min-height: 772px;
+  background: url(https://ik.imagekit.io/7wpxe2myx/Safewash/slide1_0bcj8689-.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heading1 {
+  color: #fe96c6;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 70px;
+  max-width: 701px;
+  font-family: Cocon;
+}
+
+.heading2 {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fe96c6;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 70px;
+  max-width: 678px;
+}
+
+.distributor-btn {
+  border-radius: 13px 13px 13px 0px;
+  padding: 16px 21px;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Gilroy;
+}
+
+@media (max-width: 760px) {
+  .section1 {
+    height: 50vh;
+    min-height: 500px;
+  }
+  .heading1 {
+    font-size: 26px;
+    line-height: 36px;
+    max-width: 339px;
+  }
+  .heading2 {
+    font-size: 22px;
+    line-height: 34px;
+    max-width: 242px;
+
+    margin: 20px 0;
+  }
+  .btn {
+    border-radius: 13px 13px 13px 0px;
+    padding: 16px 21px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: Gilroy;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+}

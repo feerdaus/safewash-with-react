@@ -1,0 +1,38 @@
+.s5-heading {
+  color: #795a69;
+  font-size: 48px;
+}
+
+.section5 {
+  background: url(./images/s5-bg.png);
+  background-size: cover;
+}
+
+.s5-btn {
+  border-radius: 13px 13px 13px 0px;
+  padding: 16px 21px;
+  font-size: 16px 21px;
+  line-height: 20px;
+}
+
+.s5-text {
+  font-size: 16px;
+  line-height: 204.18%;
+  max-width: 632px;
+}
+
+@media (max-width: 760px) {
+  .s5-heading {
+    font-size: 26px;
+  }
+
+  .s5-text {
+    width: 100%;
+  }
+  .s5-p {
+    max-width: 344px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 28px;
+  }
+}

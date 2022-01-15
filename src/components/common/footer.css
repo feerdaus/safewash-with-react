@@ -1,0 +1,20 @@
+.footer {
+  background-color: rgba(184, 219, 217, 0.2);
+}
+
+.last-footer {
+  color: white;
+  background-color: #21a4c4;
+}
+
+.footer-h {
+  font-family: "BR Firma";
+}
+
+p {
+  font-size: 12px;
+}
+
+.icons {
+  max-width: 150px;
+}

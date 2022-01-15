@@ -1,0 +1,26 @@
+.s3-heading {
+  color: #795a69;
+  font-size: 48px;
+  line-height: 161.18%;
+  max-width: 701px;
+}
+
+.s3-p {
+  font-size: 16px;
+  line-height: 204.18%;
+}
+
+@media (max-width: 760px) {
+  .s3-p {
+    max-width: 344px;
+    font-size: 14px;
+    line-height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .s3-heading {
+    font-size: 26px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

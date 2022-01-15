@@ -1,0 +1,47 @@
+.s2 {
+  background-image: url("./images/s2background.png");
+  background-size: cover;
+}
+.paragraph1 {
+  max-width: 816px;
+}
+
+.protection {
+  color: #21a4c4;
+  font-family: "Gilroy";
+}
+
+.eco {
+  color: #6eb245;
+  font-family: "Gilroy";
+}
+.conc {
+  font-family: "BR Firma";
+}
+.unique {
+  color: #02998a;
+  font-family: "BR Firma";
+}
+
+.s2-texts {
+  font-size: 16px;
+  line-height: 204.18%;
+}
+
+@media (max-width: 760px) {
+  .paragraph1 {
+    max-width: 339px;
+  }
+
+  .s2-texts {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .paragraphs {
+    max-width: 331px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 10%;
+  }
+}
