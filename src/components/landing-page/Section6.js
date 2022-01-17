@@ -7,6 +7,32 @@ import blueCircle from "./images/Ellipse-blue.png";
 import magentaCircle from "./images/Ellipse-magenta.png";
 import { quoteIcon } from "./icons";
 
+const testimonials = [
+  {
+    name: "Abdul Wasiu Modu",
+    post: "Laundry Owner",
+    image: jide,
+    border: blueCircle,
+    testimony: "I have tried it oooo, the thickness and smell is everything.",
+  },
+  {
+    name: "Abdul Wasiu Modu",
+    post: "A Nursuing mother",
+    image: aikomo,
+    border: greenCircle,
+    testimony:
+      "Yeah I have bought after I gave birth because I feel my baby’s clothes deserve bqsafewash I and to protect his skin from rashes and allergies",
+  },
+  {
+    name: "Abdul Wasiu Modu",
+    post: "Laundry Owner",
+    image: david,
+    border: magentaCircle,
+    testimony:
+      " I tried bqsafewash yesterday! It was the Bomb! My customers are happy and coming back for more",
+  },
+];
+
 const Section6 = () => {
   return (
     <section className="s6 py-40">
@@ -19,98 +45,38 @@ const Section6 = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 container-div mx-auto mb-20">
-          <div className="s6-divs mx-auto mb-20 md:mb-0 relative p-4">
-            <div className="absolute -top-8 -left-8">
-              <img
-                className="rounded-full relative z-10 mx-auto width={198} height={296}"
-                src={jide}
-                alt="jide"
-                width={95}
-                height={123}
-              />
-              <img
-                className="s6-distributor-ellipse absolute z-0"
-                src={blueCircle}
-                alt=""
-                width={95}
-                height={123}
-              />
-            </div>
-            <div className="testimoniers ml-auto mt-4">
-              <p className="name font-bold mb-1">Abdul Wasiu Modu</p>
-              <p className="post">Laundry Owner</p>
-            </div>
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={`${testimonial.name}-${index}`}
+              className="s6-divs mx-auto mb-20 md:mb-0 relative p-4"
+            >
+              <div className="absolute -top-8 -left-8">
+                <img
+                  className="rounded-full relative z-10 mx-auto width={198} height={296}"
+                  src={testimonial.image}
+                  alt="jide"
+                  width={95}
+                  height={123}
+                />
+                <img
+                  className="s6-distributor-ellipse absolute z-0"
+                  src={testimonial.border}
+                  alt="#"
+                  width={95}
+                  height={123}
+                />
+              </div>
+              <div className="testimoniers ml-auto mt-4">
+                <p className="name font-bold mb-1">{testimonial.name}</p>
+                <p className="post">{testimonial.post}</p>
+              </div>
 
-            <blockquote className="relative mt-12">
-              <span className="absolute top-1 -left-5">{quoteIcon} </span>
-              <p className="text">
-                I have tried it oooo, the thickness and smell is everything.
-              </p>
-            </blockquote>
-          </div>
-
-          <div className="s6-divs mx-auto mb-20 md:mb-0 relative p-4">
-            <div className="absolute -top-8 -left-8">
-              <img
-                className="rounded-full relative z-10 mx-auto width={198} height={296}"
-                src={aikomo}
-                alt="aikomo"
-                width={95}
-                height={123}
-              />
-              <img
-                className="s6-distributor-ellipse absolute z-0"
-                src={greenCircle}
-                alt=""
-                width={95}
-                height={123}
-              />
+              <blockquote className="relative mt-12">
+                <span className="absolute top-1 -left-5">{quoteIcon} </span>
+                <p className="text">{testimonial.testimony}</p>
+              </blockquote>
             </div>
-            <div className="testimoniers ml-auto mt-4">
-              <p className="name font-bold mb-1">Abdul Wasiu Modu</p>
-              <p className="post">A Nursing Mother</p>
-            </div>
-
-            <blockquote className="relative mt-12">
-              <span className="absolute top-1 -left-5">{quoteIcon} </span>
-              <p className="text">
-                Yeah I have bought after I gave birth because I feel my baby’s
-                clothes deserve bqsafewash I and to protect his skin from rashes
-                and allergies
-              </p>
-            </blockquote>
-          </div>
-
-          <div className="s6-divs mx-auto relative p-4">
-            <div className="absolute -top-8 -left-8">
-              <img
-                className="rounded-full relative z-10 mx-auto width={198} height={296}"
-                src={david}
-                alt="david"
-                width={95}
-                height={123}
-              />
-              <img
-                className="s6-distributor-ellipse absolute z-0"
-                src={magentaCircle}
-                alt=""
-                width={95}
-                height={123}
-              />
-            </div>
-            <div className="testimoniers ml-auto mt-4">
-              <p className="name font-bold mb-1">Abdul Wasiu Modu</p>
-              <p className="post">Laundry Owner</p>
-            </div>
-
-            <blockquote className="relative mt-12">
-              <span className="absolute top-1 -left-5">{quoteIcon} </span>
-              <p className="text">
-                I tried bqsafewash yesterday! It was the Bomb! My customers are
-                happy and coming back for more
-              </p>
-            </blockquote>
-          </div>
+          ))}
         </div>
         <div>
           <img
