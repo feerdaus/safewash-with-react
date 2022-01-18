@@ -33,6 +33,42 @@ const testimonials = [
   },
 ];
 
+const getTestimonies = () => {
+  const testimonies = testimonials.map((testimonial, index) => (
+    <div
+      key={`${testimonial.name}-${index}`}
+      className="s6-divs mx-auto mb-20 md:mb-0 relative p-4"
+    >
+      <div className="absolute -top-8 -left-8">
+        <img
+          className="rounded-full relative z-10 mx-auto width={198} height={296}"
+          src={testimonial.image}
+          alt="jide"
+          width={95}
+          height={123}
+        />
+        <img
+          className="s6-distributor-ellipse absolute z-0"
+          src={testimonial.border}
+          alt="#"
+          width={95}
+          height={123}
+        />
+      </div>
+      <div className="testimoniers ml-auto mt-4">
+        <p className="name font-bold mb-1">{testimonial.name}</p>
+        <p className="post">{testimonial.post}</p>
+      </div>
+
+      <blockquote className="relative mt-12">
+        <span className="absolute top-1 -left-5">{quoteIcon} </span>
+        <p className="text">{testimonial.testimony}</p>
+      </blockquote>
+    </div>
+  ));
+  return testimonies;
+};
+
 const Section6 = () => {
   return (
     <section className="s6 py-40">
@@ -45,38 +81,7 @@ const Section6 = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 container-div mx-auto mb-20">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={`${testimonial.name}-${index}`}
-              className="s6-divs mx-auto mb-20 md:mb-0 relative p-4"
-            >
-              <div className="absolute -top-8 -left-8">
-                <img
-                  className="rounded-full relative z-10 mx-auto width={198} height={296}"
-                  src={testimonial.image}
-                  alt="jide"
-                  width={95}
-                  height={123}
-                />
-                <img
-                  className="s6-distributor-ellipse absolute z-0"
-                  src={testimonial.border}
-                  alt="#"
-                  width={95}
-                  height={123}
-                />
-              </div>
-              <div className="testimoniers ml-auto mt-4">
-                <p className="name font-bold mb-1">{testimonial.name}</p>
-                <p className="post">{testimonial.post}</p>
-              </div>
-
-              <blockquote className="relative mt-12">
-                <span className="absolute top-1 -left-5">{quoteIcon} </span>
-                <p className="text">{testimonial.testimony}</p>
-              </blockquote>
-            </div>
-          ))}
+          {getTestimonies()}
         </div>
         <div>
           <img
